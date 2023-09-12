@@ -40,6 +40,7 @@ def reducer(f,s):
 def mapreduce_wordcount(lis):
     def word_count(lis):
         n=len(lis)
+        print(lis)
         if n > 20: #split the list into 3 for better complexity
             l1 = word_count(lis[:n//3])
             l2 = word_count(lis[n//3:(2*n)//3])
